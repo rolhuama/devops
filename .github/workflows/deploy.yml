@@ -1,4 +1,4 @@
- name: Deploy to Azure
+  name: Deploy to Azure
   on:
     push:
       branches:
@@ -19,6 +19,11 @@
         - name: Build and deploy Container App
           uses: azure/container-apps-deploy-action@v1
           with:
+            appSourcePath: ${{ github.workspace }}
+            acrName: ${{ vars.AZURE_PREFIX }}acr
+            resourceGroup: ${{ vars.AZURE_RG }}
+            containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
+            containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
             appSourcePath: ${{ github.workspace }}
             acrName: ${{ vars.AZURE_PREFIX }}acr
             resourceGroup: ${{ vars.AZURE_RG }}
