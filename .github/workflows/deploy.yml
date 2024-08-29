@@ -24,8 +24,3 @@
             resourceGroup: ${{ vars.AZURE_RG }}
             containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
             containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
-            appSourcePath: ${{ github.workspace }}
-            acrName: ${{ vars.AZURE_PREFIX }}acr
-            resourceGroup: ${{ vars.AZURE_RG }}
-            containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
-            containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
