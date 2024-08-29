@@ -1,4 +1,4 @@
-# What The Hack - Modern development con DevOps y GitHub
+ru# What The Hack - Modern development con DevOps y GitHub
 
 ## ¿Qué es What The Hack?
 
